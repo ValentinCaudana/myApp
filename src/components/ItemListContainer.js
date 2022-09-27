@@ -1,16 +1,15 @@
 import React from 'react'
 import '../App.css'
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
     return (
         <>
         <div>
             <p>
-            Hola a Todos.
+            {greeting}
             </p>
         </div>
         </>
     )
-
 } 
 
 export default ItemListContainer
