@@ -1,44 +1,31 @@
+import  BoxIconElement  from 'boxicons';
 import React from 'react'
-import styled from 'styled-components'
-import CatWidjet from './CatWidget'
-import '../App.css'
+import Nike from '../../src/imagenes/Nike.jpg';
+
 
 const NavBar = () => {
     return (
-        <>
-            <NavContainer>
-                <div>
-                    <a  href="/">Login</a>
-                    <a  href="/">Perfil</a>
-                    <a  href="/">Historial</a>
-                    <a  href="/">Contacto</a>
+        <header>
+            <a href='#'>
+                <div className="logo">
+                    <img src={Nike} alt="logo" width="150"/>
                 </div>
-                <CatWidjet/> 
-            </NavContainer>
-        </>
+            </a>
+            <ul>
+                <li>
+                    <a href='/'>INICIO</a>  
+                </li>
+                <li>
+                    <a href='/productos'>PRODUCTOS</a>
+                </li>
+            </ul>
+            <div className='cart'>
+                <box-icon name="cart"></box-icon>
+                <span className='item__total'>0</span>
+            </div>
+        </header>
     )
 
 } 
 
 export default NavBar
-
-const NavContainer = styled.nav`
-    h2{
-    color: white;
-    font-weight: 400;
-    span{
-      font-weight: bold;
-    }
-  } 
-  padding: .4rem;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  a{
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
-  }
-
-  `
