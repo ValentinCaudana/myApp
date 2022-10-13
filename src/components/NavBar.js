@@ -6,7 +6,7 @@ import Nike from '../../src/imagenes/Nike.jpg';
 const NavBar = () => {
     return (
         <header>
-            <a href='#'>
+            <a href='/'>
                 <div className="logo">
                     <img src={Nike} alt="logo" width="150"/>
                 </div>

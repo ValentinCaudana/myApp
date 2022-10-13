@@ -85,6 +85,20 @@
     background-color: crimson;
   } 
    
+  /* --- INICIO --- */
+  .inicio {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 9rem;
+  }
+  .inicio h1 {
+    font-size: 2.5rem;
+    color: #282c34;
+  }
+  .inicio img{
+    width: 100%;
+  }
+
   /* --PRODUCTOS-- */
    .title{
     font-size: 2rem;
@@ -171,3 +185,4 @@
   .buttom div a:hover{
    color: white; 
   } 
+

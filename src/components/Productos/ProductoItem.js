@@ -1,5 +1,5 @@
 import React from "react";
-import IMG from "../../imagenes/img01.jpg";
+import IMG from "../../images/img01.jpg";
 
 export const  ProductoItem = ({
     id,
@@ -7,13 +7,15 @@ export const  ProductoItem = ({
     price,
     image,
     category,
-    cantidad
+    
 }) => {
+
+
     return (
         <div className="producto">
         <a href="#">
           <div className="producto__img">
-            <img src={image.default} alt={title} />
+            <img src={image.defaul} alt={title} />
           </div>
         </a>
         <div className="producto__footer">
@@ -32,3 +34,5 @@ export const  ProductoItem = ({
       </div>
     )
 }
+
+export default ProductoItem

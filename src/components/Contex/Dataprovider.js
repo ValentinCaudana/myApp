@@ -1,9 +1,9 @@
 import React, { useState, useEffect, createContext} from "react";
-import Data from "../Data";
+import Data from "../../Data";
 
 export const DataContext = createContext (); 
 
-export const DataProvaider = (props) => {
+export const Dataprovider = (props) => {
     const [productos, setProductos] = useState ([])
 
 
@@ -21,8 +21,10 @@ export const DataProvaider = (props) => {
     }
 
     return (
-        <DataContext.Provider value = {value}>
+        <DataContext.Provider value={value}>
             {props.children}
         </DataContext.Provider>
     )
 }
+
+export default DataContext.Provider
